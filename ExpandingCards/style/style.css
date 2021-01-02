@@ -18,10 +18,11 @@ body {
 }
 
 .card {
-	background-size: auto 100%;
+	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 80vh;
+	width: 15vw;
 	border-radius: 10px;
 	margin: 4px;
 	padding-left: 16px;
@@ -31,6 +32,8 @@ body {
 	align-items: flex-end;
 	color: transparent;
 	caret-color: transparent;
+	position: relative;
+	transition: flex 200ms ease-in-out, color 300ms;
 }
 
 .active {
