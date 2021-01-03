@@ -1,11 +1,137 @@
 :root {
 	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	--transition-speed: 400ms;
+	--nav-control: #57baf3;
+	--content-background: #fdfdfd;
+	--nav-background: #444;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	height: 100vh;
 	width: 100vw;
 	overflow: hidden;
+	background-color: var(--nav-background);
+}
+
+.nav-controls {
+	position: absolute;
+	border: 1px solid var(--nav-control);
+	border-radius: 50%;
+	height: 125px;
+	width: 125px;
+	top: -50px;
+	left: -50px;
+	background-color: var(--nav-control);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	caret-color: transparent;
+	z-index: 3;
+}
+
+.nav-controls svg {
+	width: 25px;
+	height: 25px;
+	color: white;
+}
+
+.btn {
+	display: none;
+	position: absolute;
+	border: none;
+	background-color: transparent;
+	margin-top: 10px;
+}
+
+.btn.active {
+	display: inline;
+	cursor: pointer;
+}
+
+.content {
+	background-color: var(--content-background);
+	transition: transform var(--transition-speed) linear;
+	width: 100vw;
+	min-height: 100vh;
+	padding: 50px;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+}
+
+.content.show-nav {
+	transform: rotate(-20deg);
+	transform-origin: top left;
+}
+
+.content.hide-nav {
+	transform: rotate(0deg);
+	transform-origin: top left;
+}
+
+.navbar.hide-nav {
+	transform: rotate(70deg);
+	transform-origin: top left;
+}
+
+.navbar.show-nav {
+	transform: rotate(0deg);
+	transform-origin: top left;
+}
+
+.content img {
+	height: 500px;
+}
+
+.content-container {
+	width: 75vw;
+	text-align: left;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	color: white;
+	position: fixed;
+	transition: transform var(--transition-speed) linear;
+}
+
+.nav-list {
+	padding-left: 0px;
+	list-style: none;
+	font-weight: bold;
+}
+
+.nav-item {
+	margin: 2rem;
+	display: flex;
+	align-items: flex-end;
+	margin-left: 50px;
+}
+
+.navbar .nav-list .nav-item + .nav-item {
+	margin-left: 75px;
+}
+
+.navbar .nav-list .nav-item + .nav-item + .nav-item {
+	margin-left: 100px;
+}
+
+.navbar svg {
+	width: 25px;
+	height: 25px;
+	color: white;
+	margin-right: 10px;
+}
+
+.link-text {
+	text-transform: uppercase;
 }
