@@ -11,7 +11,7 @@ const updateProgress = (type) => {
 		for (let i = 0; i < currentProgress; i++) {
 			circles[i].classList.add("active");
 		}
-	} else {
+	} else if (type === "prev") {
 		currentProgress--;
 		circles[currentProgress].classList.remove("active");
 	}
