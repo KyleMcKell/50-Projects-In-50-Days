@@ -97,3 +97,11 @@ body {
 .btn:hover {
 	background-color: var(--hover);
 }
+
+.disabled {
+	background-color: var(--no-progress);
+}
+
+.btn.disabled:hover {
+	background-color: var(--no-progress);
+}

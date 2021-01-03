@@ -1,5 +1,4 @@
 let circles = document.querySelectorAll(".circle");
-let activeCircles = document.querySelectorAll(".active");
 let progressBar = document.querySelector("#progress");
 let prevBtn = document.querySelector("#prev");
 let nextBtn = document.querySelector("#next");
@@ -15,6 +14,19 @@ const updateProgress = (type) => {
 	} else {
 		currentProgress--;
 		circles[currentProgress].classList.remove("active");
+	}
+
+	if (currentProgress === 4) {
+		nextBtn.classList.add("disabled");
+		nextBtn.disabled = true;
+	} else if (currentProgress === 1) {
+		prevBtn.classList.add("disabled");
+		prevBtn.disabled = true;
+	} else {
+		nextBtn.classList.remove("disabled");
+		prevBtn.classList.remove("disabled");
+		nextBtn.disabled = false;
+		prevBtn.disabled = false;
 	}
 
 	const actives = document.querySelectorAll(".active");
