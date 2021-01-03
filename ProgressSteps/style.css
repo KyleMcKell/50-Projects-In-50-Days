@@ -13,9 +13,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	overflow: hidden;
 	background-color: #f6f7fb;
-	caret-color: transparent;
 	user-select: none;
 }
 
@@ -32,7 +30,7 @@ body {
 	margin-bottom: 30px;
 	justify-content: space-between;
 	max-width: 100%;
-	width: 390px;
+	width: 400px;
 }
 
 .progress-container::before {
@@ -87,11 +85,10 @@ body {
 	background-color: var(--progress);
 	color: #fff;
 	cursor: pointer;
-	display: inline-block;
 	border: none;
 	width: 7rem;
 	height: 3rem;
-	border-radius: 6px;
+	border-radius: 7px;
 	font-size: 16px;
 	font-weight: bold;
 	transition: background-color var(--transition-speed);
@@ -101,8 +98,9 @@ body {
 	background-color: var(--hover);
 }
 
-.disabled {
+.btn.disabled {
 	background-color: var(--no-progress);
+	cursor: default;
 }
 
 .btn.disabled:hover {
