@@ -42,7 +42,7 @@ prevBtn.addEventListener("click", () => {
 });
 
 nextBtn.addEventListener("click", () => {
-	if (currentProgress < 4) {
+	if (currentProgress < circles.length) {
 		updateProgress("next");
 	}
 });
