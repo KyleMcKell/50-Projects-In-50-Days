@@ -11,4 +11,4 @@ A small project of creating a progress bar that you would see in a form fill out
 ## Notes
 
 - The hardest part about this one was definitely having the progress bar actually work. I was confused how to make it go behind the circles, and also generally how to position it and the like. It took some looking up, and some tutorial following, but I eventually figured it out.
-- This could be improved with a forEach method in the script. This is what is done in the Udemy course. However, I am going to keep my code that I personally wrote as to show my progress as a developer, but array methods are definitely something to keep in mind for future projects
+- This could be improved with a forEach method in the script. This is what is done in the Udemy course. However, I am going to keep my code that I personally wrote as to show my progress as a developer, and add in a way to use a forEach method instead as a comment.
