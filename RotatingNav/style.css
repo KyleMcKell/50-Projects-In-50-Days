@@ -61,6 +61,15 @@ body {
 	justify-content: center;
 }
 
+.content img {
+	height: 500px;
+}
+
+.content-container {
+	width: 75vw;
+	text-align: left;
+}
+
 .content.show-nav {
 	transform: rotate(-20deg);
 	transform-origin: top left;
@@ -69,25 +78,6 @@ body {
 .content.hide-nav {
 	transform: rotate(0deg);
 	transform-origin: top left;
-}
-
-.navbar.hide-nav {
-	transform: rotate(70deg);
-	transform-origin: top left;
-}
-
-.navbar.show-nav {
-	transform: rotate(0deg);
-	transform-origin: top left;
-}
-
-.content img {
-	height: 500px;
-}
-
-.content-container {
-	width: 75vw;
-	text-align: left;
 }
 
 .navbar {
@@ -102,6 +92,23 @@ body {
 	color: white;
 	position: fixed;
 	transition: transform var(--transition-speed) linear;
+}
+
+.navbar svg {
+	width: 25px;
+	height: 25px;
+	color: white;
+	margin-right: 10px;
+}
+
+.navbar.hide-nav {
+	transform: rotate(70deg);
+	transform-origin: top left;
+}
+
+.navbar.show-nav {
+	transform: rotate(0deg);
+	transform-origin: top left;
 }
 
 .nav-list {
@@ -123,13 +130,6 @@ body {
 
 .navbar .nav-list .nav-item + .nav-item + .nav-item {
 	margin-left: 100px;
-}
-
-.navbar svg {
-	width: 25px;
-	height: 25px;
-	color: white;
-	margin-right: 10px;
 }
 
 .link-text {
