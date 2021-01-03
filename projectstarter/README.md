@@ -12,6 +12,6 @@ A directory of small projects from Brad Traversy and Florin Pop's Udemy course
 
 ## Rating
 
-Fun: x/10
-Educational: x/10
-Difficulty: x/10
+- Fun: x/10
+- Educational: x/10
+- Difficulty: x/10

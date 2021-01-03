@@ -17,5 +17,7 @@ A small project of creating a progress bar that you would see in a form fill out
 ## Rating
 
 Fun: 7/10
+
 Educational: 8/10
+
 Difficulty: 4/10

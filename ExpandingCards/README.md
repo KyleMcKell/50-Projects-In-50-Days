@@ -17,6 +17,6 @@ Simple project consisting of cards, and animating them using CSS and flexbox
 
 ## Rating
 
-Fun: 5/10
-Educational: 5/10
-Difficulty: 3/10
+- Fun: 5/10
+- Educational: 5/10
+- Difficulty: 3/10
