@@ -2,10 +2,6 @@
 
 A directory of small projects from Brad Traversy and Florin Pop's Udemy course
 
-## What I learned
+## How to Use
 
-- I'll put what I learn in each project in this line
-
-## Notes
-
-- Each folder has a different project in it!
+Each folder corresponds to it's own specific project! Open one up and the code should work in isolation.
