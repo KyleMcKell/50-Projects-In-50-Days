@@ -1,17 +1,19 @@
 # Hidden Search
 
-A directory of small projects from Brad Traversy and Florin Pop's Udemy course
+Search bar which hides when not active, reveals when search button is clicked
 
 ## What I learned
 
-- I'll put what I learn in each project in this line
+- CSS Animation
+- Resizing font awesome from cdn (i tags)
 
 ## Notes
 
-- Each folder has a different project in it!
+- This project was very easy. It took me less than an hour to complete.
+- Despite the ease of this project, it was fun to do and also will be very helpful, as these sort of hidden search bars are everywhere online. It was also nice to be given some "candy" with an easy project in the midst of some of the harder ones.
 
 ## Rating
 
-- Fun: x/10
-- Educational: x/10
-- Difficulty: x/10
+- Fun: 5/10
+- Educational: 2/10
+- Difficulty: 1/10
