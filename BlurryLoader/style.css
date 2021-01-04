@@ -13,3 +13,21 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+
+.bg {
+	background: url("https://image.pbs.org/video-assets/iZOsUzY-asset-mezzanine-16x9-8YZsCRv.jpg")
+		no-repeat center center/cover;
+	position: absolute;
+	top: -30px;
+	left: -30px;
+	width: calc(100vw + 60px);
+	height: calc(100vh + 60px);
+	z-index: -1;
+	filter: blur(25px);
+}
+
+.loading-text {
+	font-size: 50px;
+	color: #fff;
+	font-weight: bold;
+}
