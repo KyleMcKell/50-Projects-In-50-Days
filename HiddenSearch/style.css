@@ -33,6 +33,7 @@ body {
 
 .search-container.closed {
 	width: 1.5rem;
+	justify-content: right;
 }
 
 .search-form.closed {
