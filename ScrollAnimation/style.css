@@ -36,7 +36,7 @@ h1 {
 	box-shadow: 0px 0px 0px 3px var(--color1);
 	font-size: 30px;
 	font-weight: bold;
-	transition: transform 400ms linear;
+	transition: transform 400ms ease-out;
 }
 
 .box:nth-of-type(even) {
