@@ -33,13 +33,29 @@ body {
 	z-index: 0;
 }
 
+.content-container.ps5 {
+	background-image: url("https://www.trustedreviews.com/wp-content/uploads/sites/54/2020/06/EaQuYhyXYAEfi3G.jpeg");
+}
+
+.content-container.xbox {
+	background-image: url("https://gamespot1.cbsistatic.com/uploads/original/123/1239113/3614975-series-xbox4.jpg");
+}
+
 .overlay {
 	position: fixed;
 	height: 100%;
 	width: 100%;
-	opacity: 15%;
 	z-index: -1;
+}
+
+.overlay.xbox {
+	background-color: black;
+	opacity: 50%;
+}
+
+.overlay.ps5 {
 	background-color: blue;
+	opacity: 10%;
 }
 
 .content {
@@ -74,12 +90,4 @@ body {
 .content button:hover {
 	background: white;
 	color: black;
-}
-
-#ps5 {
-	background-image: url("https://www.trustedreviews.com/wp-content/uploads/sites/54/2020/06/EaQuYhyXYAEfi3G.jpeg");
-}
-
-#xbox {
-	background-image: url("https://gamespot1.cbsistatic.com/uploads/original/123/1239113/3614975-series-xbox4.jpg");
 }
