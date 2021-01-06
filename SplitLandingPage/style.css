@@ -23,11 +23,7 @@ body {
 	justify-content: center;
 }
 
-.content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+.content-container {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -36,12 +32,24 @@ body {
 	transition: flex 400ms ease-in-out;
 }
 
-.content h2 {
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.overlay {
+	position: absolute;
+}
+
+.content-container h2 {
 	color: white;
 	font-size: 50px;
 }
 
-.content button {
+.content-container button {
 	border: 5px solid white;
 	border-radius: 10px;
 	background: none;
@@ -52,11 +60,11 @@ body {
 	color: white;
 }
 
-.content:hover {
+.content-container:hover {
 	flex: 3;
 }
 
-.content button:hover {
+.content-container button:hover {
 	background: white;
 	color: black;
 }
