@@ -49,13 +49,13 @@ body {
 }
 
 .overlay.xbox {
-	background-color: black;
-	opacity: 50%;
+	background-color: green;
+	opacity: 15%;
 }
 
 .overlay.ps5 {
 	background-color: blue;
-	opacity: 10%;
+	opacity: 50%;
 }
 
 .content {
