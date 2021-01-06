@@ -32,6 +32,8 @@ body {
 	background-size: cover;
 	background-position: center;
 	height: 100%;
+	flex: 1;
+	transition: flex 200ms ease;
 }
 
 .content h2 {
@@ -40,21 +42,29 @@ body {
 }
 
 .content button {
-	border: none;
+	border: 5px solid white;
+	border-radius: 10px;
 	background: none;
-}
-
-.content button a {
+	padding: 25px 50px;
+	font-size: 20px;
+	font-weight: bold;
 	text-decoration: none;
 	color: white;
 }
 
+.content:hover {
+	flex: 3;
+}
+
+.content button:hover {
+	background: white;
+	color: black;
+}
+
 #ps5 {
 	background-image: url("https://www.trustedreviews.com/wp-content/uploads/sites/54/2020/06/EaQuYhyXYAEfi3G.jpeg");
-	flex: 1;
 }
 
 #xbox {
 	background-image: url("https://gamespot1.cbsistatic.com/uploads/original/123/1239113/3614975-series-xbox4.jpg");
-	flex: 1;
 }
