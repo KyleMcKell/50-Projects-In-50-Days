@@ -13,3 +13,48 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+
+.container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+}
+
+.content h2 {
+	color: white;
+	font-size: 50px;
+}
+
+.content button {
+	border: none;
+	background: none;
+}
+
+.content button a {
+	text-decoration: none;
+	color: white;
+}
+
+#ps5 {
+	background-image: url("https://www.trustedreviews.com/wp-content/uploads/sites/54/2020/06/EaQuYhyXYAEfi3G.jpeg");
+	flex: 1;
+}
+
+#xbox {
+	background-image: url("https://gamespot1.cbsistatic.com/uploads/original/123/1239113/3614975-series-xbox4.jpg");
+	flex: 1;
+}
