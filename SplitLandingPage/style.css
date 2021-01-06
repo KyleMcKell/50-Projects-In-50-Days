@@ -80,14 +80,22 @@ body {
 	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
-	color: white;
+	color: #fff;
+	text-transform: uppercase;
 }
 
 .content-container:hover {
 	flex: 3;
 }
 
-.content button:hover {
-	background: white;
-	color: black;
+.content.ps5 button:hover {
+	background: rgb(60, 60, 250);
+	color: #eee;
+	border-color: darkblue;
+}
+
+.content.xbox button:hover {
+	background: rgb(34, 109, 34);
+	color: white;
+	border-color: darkgreen;
 }
