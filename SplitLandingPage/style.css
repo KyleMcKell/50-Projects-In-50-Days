@@ -30,6 +30,16 @@ body {
 	height: 100%;
 	flex: 1;
 	transition: flex 400ms ease-in-out;
+	z-index: 0;
+}
+
+.overlay {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	opacity: 15%;
+	z-index: -1;
+	background-color: blue;
 }
 
 .content {
@@ -38,18 +48,15 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+	z-index: 1;
 }
 
-.overlay {
-	position: absolute;
-}
-
-.content-container h2 {
+.content h2 {
 	color: white;
 	font-size: 50px;
 }
 
-.content-container button {
+.content button {
 	border: 5px solid white;
 	border-radius: 10px;
 	background: none;
@@ -64,7 +71,7 @@ body {
 	flex: 3;
 }
 
-.content-container button:hover {
+.content button:hover {
 	background: white;
 	color: black;
 }
