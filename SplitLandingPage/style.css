@@ -33,7 +33,7 @@ body {
 	background-position: center;
 	height: 100%;
 	flex: 1;
-	transition: flex 200ms ease;
+	transition: flex 400ms ease-in-out;
 }
 
 .content h2 {
