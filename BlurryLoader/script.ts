@@ -1,8 +1,9 @@
+const loadText = document.querySelector<HTMLDivElement>(".loading-text")!;
+const bg = document.querySelector<HTMLDivElement>(".bg")!;
+
 let load = 0;
 
 const blurring = () => {
-	const loadText = document.querySelector(".loading-text") as HTMLFormElement;
-	const bg = document.querySelector(".bg") as HTMLFormElement;
 	load++;
 
 	if (load > 99) {
