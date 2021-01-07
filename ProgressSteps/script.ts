@@ -1,11 +1,11 @@
 let circles = document.querySelectorAll(".circle");
-let progressBar = document.querySelector("#progress");
-let prevBtn = document.querySelector("#prev");
-let nextBtn = document.querySelector("#next");
+let progressBar = document.querySelector("#progress") as HTMLFormElement;
+let prevBtn = document.querySelector("#prev") as HTMLFormElement;
+let nextBtn = document.querySelector("#next") as HTMLFormElement;
 
 let currentProgress = 1;
 
-const updateProgress = (type) => {
+const updateProgress = (type: string) => {
 	// way I solved the problem originally
 	if (type === "next") {
 		for (let i = 0; i < currentProgress; i++) {
