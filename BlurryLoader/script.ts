@@ -1,13 +1,12 @@
-const loadText = document.querySelector(".loading-text");
-const bg = document.querySelector(".bg");
-
 let load = 0;
 
 const blurring = () => {
+	const loadText = document.querySelector(".loading-text") as HTMLFormElement;
+	const bg = document.querySelector(".bg") as HTMLFormElement;
 	load++;
 
 	if (load > 99) {
-		clearInterval(int);
+		clearInterval();
 	}
 
 	loadText.innerText = `${load}%`;
