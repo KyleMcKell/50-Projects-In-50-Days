@@ -1,17 +1,18 @@
-# Project Template
+# Sound Board
 
-A directory of small projects from Brad Traversy and Florin Pop's Udemy course
+Sound Board where if something is clicked, a sound is played, if a button is clicked again it stops the sound and replays it
 
 ## What I learned
 
-- I'll put what I learn in each project in this line
+- Audio tags
+- Array.prototype.method.call to use array methods on nodelists
 
 ## Notes
 
-- Each folder has a different project in it!
+- I've done something similar to this in the past, so it was a breeze to make. I decided to use a different solution than a for loop and using the index to of the two lists during a for loop with using the Array.prototype.indexOf.call() method
 
 ## Rating
 
-- Fun: x/10
-- Educational: x/10
-- Difficulty: x/10
+- Fun: 2/10
+- Educational: 2/10
+- Difficulty: 2/10
