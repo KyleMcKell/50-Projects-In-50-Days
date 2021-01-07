@@ -1,4 +1,4 @@
-const labels: NodeListOf<HTMLLabelElement> = document.querySelectorAll(
+const labels = document.querySelectorAll<HTMLLabelElement>(
 	".form-control label"
 );
 

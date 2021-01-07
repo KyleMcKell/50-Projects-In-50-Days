@@ -1,8 +1,8 @@
-const searchContainer = document.querySelector(
+const searchContainer = document.querySelector<HTMLDivElement>(
 	".search-container"
-) as HTMLDivElement;
-const searchForm = document.querySelector(".search-form") as HTMLDivElement;
-const searchButton = document.querySelector(".search-button") as HTMLDivElement;
+)!;
+const searchForm = document.querySelector<HTMLFormElement>(".search-form")!;
+const searchButton = document.querySelector<HTMLDivElement>(".search-button")!;
 
 searchButton.addEventListener("click", () => {
 	searchContainer.classList.toggle("closed");

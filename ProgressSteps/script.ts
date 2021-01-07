@@ -1,7 +1,9 @@
 let circles = document.querySelectorAll(".circle");
-let progressBar = document.querySelector("#progress-bar") as HTMLDivElement;
-let prevBtn = document.querySelector("#prev") as HTMLButtonElement;
-let nextBtn = document.querySelector("#next") as HTMLButtonElement;
+let progressBar = document.querySelector<HTMLDivElement>(
+	"#progress-bar"
+) as HTMLDivElement;
+let prevBtn = document.querySelector<HTMLButtonElement>("#prev")!;
+let nextBtn = document.querySelector<HTMLButtonElement>("#next")!;
 
 let currentProgress = 1;
 

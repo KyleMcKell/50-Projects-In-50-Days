@@ -1,5 +1,5 @@
-const loadText = document.querySelector(".loading-text") as HTMLDivElement;
-const bg = document.querySelector(".bg") as HTMLDivElement;
+const loadText = document.querySelector<HTMLDivElement>(".loading-text")!;
+const bg = document.querySelector<HTMLDivElement>(".bg")!;
 
 let load = 0;
 

@@ -1,5 +1,5 @@
-let cards = document.querySelectorAll(".card") as NodeListOf<HTMLDivElement>;
-let activeCard = document.querySelector(".active") as HTMLDivElement;
+let cards = document.querySelectorAll<HTMLDivElement>(".card");
+let activeCard = document.querySelector<HTMLDivElement>(".active")!;
 
 cards.forEach((card) => {
 	card.addEventListener("click", () => {
