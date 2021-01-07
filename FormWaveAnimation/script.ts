@@ -1,4 +1,6 @@
-const labels = document.querySelectorAll(".form-control label");
+const labels: NodeListOf<HTMLFormElement> = document.querySelectorAll(
+	".form-control label"
+);
 
 labels.forEach((label) => {
 	label.innerHTML = label.innerText
