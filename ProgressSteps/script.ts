@@ -1,12 +1,13 @@
-let circles = document.querySelectorAll(".circle");
-let progressBar = document.querySelector<HTMLDivElement>("#progress-bar")!;
-let prevBtn = document.querySelector<HTMLButtonElement>("#prev")!;
-let nextBtn = document.querySelector<HTMLButtonElement>("#next")!;
+const circles = document.querySelectorAll<HTMLDivElement>(".circle");
+const progressBar = document.querySelector<HTMLDivElement>("#progress-bar")!;
+const prevBtn = document.querySelector<HTMLButtonElement>("#prev")!;
+const nextBtn = document.querySelector<HTMLButtonElement>("#next")!;
+let actives = document.querySelectorAll<HTMLDivElement>(".active");
 
 let currentProgress = 1;
 
 const updateProgress = () => {
-	circles.forEach((circle, index) => {
+	circles.forEach((circle: HTMLDivElement, index: number) => {
 		if (index < currentProgress) {
 			circle.classList.add("active");
 		} else {
@@ -27,7 +28,7 @@ const updateProgress = () => {
 		prevBtn.disabled = false;
 	}
 
-	const actives = document.querySelectorAll(".active");
+	actives = document.querySelectorAll<HTMLDivElement>(".active");
 
 	progressBar.style.width =
 		((actives.length - 1) / (circles.length - 1)) * 100 + "%";
