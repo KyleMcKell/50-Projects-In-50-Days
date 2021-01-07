@@ -1,6 +1,11 @@
 :root {
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
+	--blue1: #1d3557;
+	--blue2: #457b9d;
+	--blue3: #a8dadc;
+	--cream1: #f1faee;
+	--red1: #e63946;
 }
 
 body {
@@ -12,4 +17,51 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: var(--blue1);
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 50%;
+	background: var(--cream1);
+	border-radius: 10px;
+	padding: 3rem;
+	text-align: center;
+	box-shadow: 0 0 10px;
+}
+
+.container h1 {
+	font-size: 1rem;
+	margin-top: 0px;
+	color: var(--blue2);
+}
+
+.container p {
+	font-size: 20px;
+	margin: 2.5rem 20px;
+	color: var(--blue1);
+	font-weight: 500;
+}
+
+.container button {
+	border: none;
+	background: var(--blue3);
+	color: var(--blue1);
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	font: inherit;
+	font-weight: bold;
+	font-size: 18px;
+	cursor: pointer;
+	margin: 0.5rem 0.5rem;
+	box-shadow: 0 1px 2px var(--blue2);
+}
+
+.container button:active {
+	margin-top: 0.7rem;
+	margin-bottom: 0.3rem;
+	box-shadow: 0 0 0 white;
 }
