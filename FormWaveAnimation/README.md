@@ -4,14 +4,20 @@ Login form with an animation that "waves" the text of the form up when a respect
 
 ## What I learned
 
-- I'll put what I learn in each project in this line
+- Editing HTML with JavaScript (adding the spans between each letter)
+- Display properties that aren't flexbox
+- Using "+" in CSS to have an effect happen on a selected attribute when a different attribute has something happen to it (hover, focus, etc.)
+- Styling Forms
 
 ## Notes
 
-- Each folder has a different project in it!
+- This one really challenged me, I tried to do it using flexbox for a reasonable while, but I just couldn't really seem to do it.
+- My basic styling skills are definitely in need of some patching up. I think a large majority of this is my lack of understanding with different display properties, if I get more comfortable using inline-block, block, and whatnot, I think this will get better.
+- I also need to understand positioning better in blocks. Relative, absolute, etc. are all things that I feel like I need to understand more, and all need practice.
+- I had to follow the tutorial pretty much all the way through for this one. However, I did learn a lot. I'm going to review this one over the next couple of days to try to understand what was taught here more.
 
 ## Rating
 
-- Fun: x/10
-- Educational: x/10
-- Difficulty: x/10
+- Fun: 3/10
+- Educational: 8/10
+- Difficulty: 7/10
