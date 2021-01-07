@@ -1,7 +1,7 @@
-const openNavBtn = document.getElementById("open");
-const closeNavBtn = document.getElementById("close");
-const content = document.querySelector(".content");
-const navbar = document.querySelector(".navbar");
+const openNavBtn = document.getElementById("open") as HTMLButtonElement;
+const closeNavBtn = document.getElementById("close") as HTMLButtonElement;
+const content = document.querySelector(".content") as HTMLElement;
+const navbar = document.querySelector(".navbar") as HTMLElement;
 
 openNavBtn.addEventListener("click", () => {
 	handleClick(openNavBtn, closeNavBtn, true);
@@ -11,7 +11,11 @@ closeNavBtn.addEventListener("click", () => {
 	handleClick(closeNavBtn, openNavBtn, false);
 });
 
-const handleClick = (clickedButton, hiddenButton, navOpen) => {
+const handleClick = (
+	clickedButton: HTMLButtonElement,
+	hiddenButton: HTMLButtonElement,
+	navOpen: boolean
+) => {
 	clickedButton.classList.remove("active");
 	hiddenButton.classList.add("active");
 
