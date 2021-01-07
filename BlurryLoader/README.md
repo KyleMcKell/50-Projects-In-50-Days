@@ -7,7 +7,6 @@ Blurs an image and shows a % based on how blurred the image is to appear as if t
 - Blur filter
 - Repositioning backgrounds to eliminate the whitespace caused by blur
 - setInterval and clearInterval
--
 
 ## Notes
 
