@@ -6,7 +6,7 @@ labels.forEach((label: HTMLLabelElement) => {
 	label.innerHTML = label.innerText
 		.split("")
 		.map(
-			(letter, index) =>
+			(letter: string, index: number) =>
 				`<span style="transition-delay:${index * 30}ms">${letter}</span>`
 		)
 		.join("");
