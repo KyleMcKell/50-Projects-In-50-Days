@@ -2,6 +2,7 @@
 	font-family: "Roboto", sans-serif;
 	font-size: 20px;
 	--button-color: #572b92;
+	--button-active-color: #6331a5;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
 	width: 100%;
 }
 
-.sound {
+.sound-button {
 	border: 3px var(--button-color) solid;
 	border-radius: 5px;
 	padding: 1rem 2.5rem;
@@ -33,7 +34,12 @@ body {
 	font-size: inherit;
 }
 
-.sound:active {
+.sound-button:active {
 	color: #fff;
 	border-color: #fff;
+	background-color: var(--button-active-color);
+}
+
+.sound-button:hover {
+	background-color: var(--button-active-color);
 }
