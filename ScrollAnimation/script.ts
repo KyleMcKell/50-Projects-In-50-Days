@@ -3,7 +3,7 @@ const boxes = document.querySelectorAll(".box");
 const checkBoxes = () => {
 	const triggerBottom = (window.innerHeight / 10) * 9;
 
-	boxes.forEach((box) => {
+	boxes.forEach((box: Element) => {
 		const boxTop = box.getBoundingClientRect().top;
 
 		if (boxTop < triggerBottom) {
