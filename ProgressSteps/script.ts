@@ -7,24 +7,14 @@ let nextBtn = document.querySelector<HTMLButtonElement>("#next")!;
 
 let currentProgress = 1;
 
-const updateProgress = (buttonType: string) => {
-	// way I solved the problem originally
-	if (buttonType === "next") {
-		for (let i = 0; i < currentProgress; i++) {
-			circles[i].classList.add("active");
+const updateProgress = () => {
+	circles.forEach((circle, index) => {
+		if (index < currentProgress) {
+			circle.classList.add("active");
+		} else {
+			circle.classList.remove("active");
 		}
-	} else if (buttonType === "prev") {
-		circles[currentProgress].classList.remove("active");
-	}
-
-	// // forEach way to solve problem
-	// circles.forEach((circle, index) => {
-	// 	if (index < currentProgress) {
-	// 		circle.classList.add("active");
-	// 	} else {
-	// 		circle.classList.remove("active");
-	// 	}
-	// });
+	});
 
 	if (currentProgress === 4) {
 		nextBtn.classList.add("disabled");
@@ -48,13 +38,13 @@ const updateProgress = (buttonType: string) => {
 prevBtn.addEventListener("click", () => {
 	if (currentProgress > 1) {
 		currentProgress--;
-		updateProgress("prev");
+		updateProgress();
 	}
 });
 
 nextBtn.addEventListener("click", () => {
 	if (currentProgress < circles.length) {
 		currentProgress++;
-		updateProgress("next");
+		updateProgress();
 	}
 });
