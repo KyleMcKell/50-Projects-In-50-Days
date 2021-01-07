@@ -24,14 +24,16 @@ body {
 }
 
 .sound {
-	border: 1px var(--button-color) solid;
+	border: 3px var(--button-color) solid;
 	border-radius: 5px;
 	padding: 1rem 2.5rem;
 	background: var(--button-color);
 	color: #d1cece;
 	font-weight: bold;
+	font-size: inherit;
 }
 
 .sound:active {
 	color: #fff;
+	border-color: #fff;
 }
