@@ -1,21 +1,21 @@
 let circles = document.querySelectorAll(".circle");
-let progressBar = document.querySelector("#progress") as HTMLFormElement;
-let prevBtn = document.querySelector("#prev") as HTMLFormElement;
-let nextBtn = document.querySelector("#next") as HTMLFormElement;
+let progressBar = document.querySelector("#progress-bar") as HTMLDivElement;
+let prevBtn = document.querySelector("#prev") as HTMLButtonElement;
+let nextBtn = document.querySelector("#next") as HTMLButtonElement;
 
 let currentProgress = 1;
 
-const updateProgress = (type: string) => {
+const updateProgress = (buttonType: string) => {
 	// way I solved the problem originally
-	if (type === "next") {
+	if (buttonType === "next") {
 		for (let i = 0; i < currentProgress; i++) {
 			circles[i].classList.add("active");
 		}
-	} else if (type === "prev") {
+	} else if (buttonType === "prev") {
 		circles[currentProgress].classList.remove("active");
 	}
 
-	//forEach way to solve problem
+	// // forEach way to solve problem
 	// circles.forEach((circle, index) => {
 	// 	if (index < currentProgress) {
 	// 		circle.classList.add("active");

@@ -1,7 +1,7 @@
 const openNavBtn = document.getElementById("open") as HTMLButtonElement;
 const closeNavBtn = document.getElementById("close") as HTMLButtonElement;
-const content = document.querySelector(".content") as HTMLElement;
-const navbar = document.querySelector(".navbar") as HTMLElement;
+const content = document.querySelector(".content") as HTMLDivElement;
+const navbar = document.querySelector(".navbar") as HTMLDivElement;
 
 openNavBtn.addEventListener("click", () => {
 	handleClick(openNavBtn, closeNavBtn, true);
