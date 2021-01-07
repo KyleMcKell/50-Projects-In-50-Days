@@ -9,6 +9,7 @@ A directory of small projects from Brad Traversy and Florin Pop's Udemy course
 ## Notes
 
 - Each folder has a different project in it!
+- Added in TypeScript as to practice using the typing system and other quirks that may come up with it. Not sure how often it will be used, but figured the best way to get used to it is to use it
 
 ## Rating
 
