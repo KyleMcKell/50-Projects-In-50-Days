@@ -1,6 +1,7 @@
 :root {
 	font-family: "Roboto", sans-serif;
-	font-size: 16px;
+	font-size: 20px;
+	--button-color: #572b92;
 }
 
 body {
@@ -12,4 +13,25 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background: #895ec0;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.sound {
+	border: 1px var(--button-color) solid;
+	border-radius: 5px;
+	padding: 1rem 2.5rem;
+	background: var(--button-color);
+	color: #d1cece;
+	font-weight: bold;
+}
+
+.sound:active {
+	color: #fff;
 }
