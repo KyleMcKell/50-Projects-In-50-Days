@@ -74,12 +74,28 @@ body {
 }
 
 .form-control input:focus,
-.form-control input:valid {
+.form-control input:valid,
+.form-control input:invalid {
 	outline: 0;
+	box-shadow: none !important;
+	border-bottom-color: lightblue;
 }
 
 .form-control label {
 	position: absolute;
 	top: 15px;
 	left: 0;
+}
+
+.form-control label span {
+	display: inline-block;
+	font-size: 18px;
+	min-width: 5px;
+	transition: 300ms ease;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+	color: lightblue;
+	transform: translateY(-25px);
 }
