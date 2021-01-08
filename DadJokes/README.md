@@ -1,18 +1,21 @@
 # Dad Jokes
 
-A directory of small projects from Brad Traversy and Florin Pop's Udemy course
+Fetches an API of dad jokes to display a random joke on the screen whenever a button is pressed
 
 ## What I learned
 
-- I'll put what I learn in each project in this line
+- Fetch API
+- Async, Await, Promises
+- Returning a value of promise from an async function
+- Styling buttons better
 
 ## Notes
 
-- Each folder has a different project in it!
-- Added in TypeScript as to practice using the typing system and other quirks that may come up with it. Not sure how often it will be used, but figured the best way to get used to it is to use it
+- This project was the first one featuring the fetch api, promises, and the like. All of this was pretty fun to learn and actually finally apply from just watching videos on them
+- I am still confused how to return values from async await functions. Whenever I tried I would always get an error that I was returning of type Promise<T> which isn't helpful if I'm trying to assign the return value to a string. I avoided this by updating the value in the function itself, but I'm a strong believer in pure functions, so this hurts a bit. I'm sure there's a way to do it, I'll have to research more.
 
 ## Rating
 
-- Fun: x/10
-- Educational: x/10
-- Difficulty: x/10
+- Fun: 8/10
+- Educational: 9/10
+- Difficulty: 7/10
