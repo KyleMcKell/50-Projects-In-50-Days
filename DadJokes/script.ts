@@ -1,4 +1,4 @@
-const getJoke = async () => {
+const getJoke = async (): Promise<void> => {
 	const res = await fetch("https://icanhazdadjoke.com/", {
 		method: "GET",
 		headers: {
