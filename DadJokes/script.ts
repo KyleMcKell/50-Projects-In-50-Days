@@ -1,4 +1,4 @@
-const getJoke = async (): Promise<void> => {
+const getJoke = async (): Promise<string> => {
 	const res = await fetch("https://icanhazdadjoke.com/", {
 		method: "GET",
 		headers: {
@@ -11,15 +11,15 @@ const getJoke = async (): Promise<void> => {
 	} else {
 		const data = await res.json();
 		const joke = await data.joke;
-		jokeText.innerText = joke;
+		return joke;
 	}
 };
 
 const jokeButton = document.querySelector<HTMLButtonElement>(".joke-button")!;
 const jokeText = document.querySelector<HTMLParagraphElement>(".joke-text")!;
 
-jokeButton.addEventListener("click", () => {
-	getJoke();
+jokeButton.addEventListener("click", async () => {
+	jokeText.innerText = await getJoke();
 });
 
-getJoke();
+getJoke().then((joke: string) => (jokeText.innerText = joke));
