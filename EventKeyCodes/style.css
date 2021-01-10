@@ -29,10 +29,22 @@ body {
 	width: 100%;
 }
 
+.code-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .box {
 	border: 1px #ddd solid;
 	padding: 1rem;
 	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 1.5rem;
 }
 
 .label {
