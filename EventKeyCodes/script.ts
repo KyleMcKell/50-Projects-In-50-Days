@@ -5,7 +5,7 @@ const eventCode = document.querySelector<HTMLDivElement>(".event-code")!;
 const clickAKeyDiv = document.querySelector<HTMLDivElement>("#clickAKey")!;
 const keyClickedDiv = document.querySelector<HTMLDivElement>("#keyClicked")!;
 
-document.addEventListener("keydown", (key) => {
+document.addEventListener("keydown", (key: KeyboardEvent) => {
 	clickAKeyDiv.classList.add("hidden");
 	keyClickedDiv.classList.remove("hidden");
 	eventKey.innerText = key.key;
