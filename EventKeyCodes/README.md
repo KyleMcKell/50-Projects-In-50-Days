@@ -4,15 +4,15 @@ A directory of small projects from Brad Traversy and Florin Pop's Udemy course
 
 ## What I learned
 
-- I'll put what I learn in each project in this line
+- Using event.(key, keycode, and code)
 
 ## Notes
 
-- Each folder has a different project in it!
-- Added in TypeScript as to practice using the typing system and other quirks that may come up with it. Not sure how often it will be used, but figured the best way to get used to it is to use it
+- Today I didn't have all too much time to code, so I decided to keep this one simple. The app was real easy to make, but still a good exercise for practice.
+- The styling for this specific project was less of a priority than the logic
 
 ## Rating
 
-- Fun: x/10
-- Educational: x/10
-- Difficulty: x/10
+- Fun: 1/10
+- Educational: 1/10
+- Difficulty: 1/10
