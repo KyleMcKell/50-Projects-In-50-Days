@@ -12,4 +12,33 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: #2a4294;
+}
+
+.container {
+	width: 60vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.box {
+	border: 1px #ddd solid;
+	padding: 1rem;
+	background-color: white;
+}
+
+.label {
+	color: white;
+}
+
+.hidden {
+	display: none;
 }
